@@ -18,4 +18,31 @@ function displayPoem(){
     
 }
 
+function next(){
+    poemInd = (poemInd + 1) % poems.length;
+    displayPoem();
+}
+
+function prev(){
+    poemInd -= 1;
+    if(poemInd == -1) poemInd = poems.length-1;
+}
+
+function popup(){
+    document.getElementById("popupContent").innerHTML = `
+        <h2>About the Artist</h2>
+        <p>${poems[poemInd][4]}</p>
+
+        <h2>Thematic Connections</h2>
+        <p>${poems[poemInd][5]}</p>
+
+        <button onclick='closePopup()'>Close</button>
+    `;
+    document.getElementById("popup").style["display"] = "block";
+}
+
+function closePopup(){
+    document.getElementById("popup").style["display"] = "none";
+}
+
 displayPoem();

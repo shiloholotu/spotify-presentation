@@ -16,11 +16,17 @@
         
         <title>Crapple Music | Shiloh Olotu</title>
          
+        <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+
     </head>
     
     <body>
 
-        
+        <div id="popup">
+            <br>
+            <div id="popupContent"></div>
+        </div>
+
         <div id="content">
             <h2 style="font-weight: 600;"><img src="assets/logo.svg" style="vertical-align: middle;width: 30px;margin-right: 5px;">Crapple Music</h2>
             <br>
@@ -36,9 +42,9 @@
             </div>
 
             <div id="buttons">
-                <img src="assets/prev.svg">
-                <img src="assets/info.svg" style="width:60px">
-                <img src="assets/next.svg">
+                <img src="assets/prev.svg" onclick="prev()">
+                <img src="assets/info.svg" style="width:60px" onclick="popup()">
+                <img src="assets/next.svg" onclick="next()">
             </div>
 
             <a id="tswift">TSWIFT</a>
