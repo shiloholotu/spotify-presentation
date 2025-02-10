@@ -81,6 +81,12 @@ body{
     margin:5px;
     margin-top:0;
     margin-bottom:0;
+    transition:.25s;
+    cursor:pointer;
+}
+
+#buttons img:hover{
+    opacity: .5;
 }
 
 #tswift{
